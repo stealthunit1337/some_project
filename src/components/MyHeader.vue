@@ -24,7 +24,6 @@ export default {
     padding: 0;
     position: sticky;
     top: 0px;
-
 }
 
 .header__btns {

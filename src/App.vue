@@ -7,6 +7,7 @@
   </div>
   <my-footer></my-footer>
 
+
 </template>
 
 <script>
@@ -29,6 +30,7 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 1200px;
 }
 
 p {
@@ -37,8 +39,9 @@ p {
 }
 
 .app {
-  border: 3px green solid;
+  /* border: 3px green solid; */
   background-color: azure;
   min-height: 1000px;
+  max-width: 1200px;
 }
 </style>

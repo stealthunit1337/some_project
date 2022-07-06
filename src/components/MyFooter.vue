@@ -23,7 +23,6 @@ export default {
     padding: 0;
     position: sticky;
     bottom: 0px;
-
 }
 
 .footer__btns {
