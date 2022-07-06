@@ -1,10 +1,11 @@
 <template>
-    <footer class="header">
-        <my-button class="home__btn" @click="$router.push('/')">home</my-button>
-        <div class="header__btns">
-            <my-button @click="$router.push('/header-view')">header button</my-button>
-        </div>
-    </footer>
+	<footer class="header">
+		<my-button class="home__btn" @click="$router.push('/')">home</my-button>
+		<div class="header__btns">
+			<my-button @click="$router.push('/header-view')">header button</my-button>
+			<my-button @click="$router.push('/zakon-biz')">zakon-biz</my-button>
+		</div>
+	</footer>
 </template>
 
 <script>
@@ -15,24 +16,24 @@ export default {
 
 <style lang="scss" scoped>
 .header {
-    background: lightpink;
-    width: 100%;
-    height: 70px;
-    align-items: center;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    position: sticky;
-    top: 0px;
+	background: lightpink;
+	width: 100%;
+	height: 70px;
+	align-items: center;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	position: sticky;
+	top: 0px;
 }
 
 .header__btns {
-    margin-left: auto;
-    padding: 0 15px;
+	margin-left: auto;
+	padding: 0 15px;
 }
 
 .home__btn {
-    position: absolute;
-    left: 15px
+	position: absolute;
+	left: 15px
 }
 </style>
