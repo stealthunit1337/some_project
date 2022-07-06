@@ -9,8 +9,8 @@
         </div>
         <div class="some__block">
             <my-select v-model="selectedOption" :options="selectOptions"></my-select>
-            <div v-if="selectedOption === 'baobab'">baobab</div>
-            <div v-if="selectedOption === 'kaktus'">kaktus</div>
+            <div>{{ selectedOption }}</div>
+
         </div>
         <div class="some__block"></div>
     </div>
