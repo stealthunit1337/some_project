@@ -1,60 +1,66 @@
 
 <template >
-	<!-- <CContainer sm> -->
-		
-	<div class="main1">
-		<!-- <my-carousel :carousel_data="sliderItems"></my-carousel> -->
-		<img class="bg" src="@/assets/bg.jpg" alt="">
-		<div class="icons__block">
-			<div class="text "> <img src="@/assets/icons/good.png" alt="">Разъяснения закона и дальнейших действий
-			</div>
-			<div class="text "><img src="@/assets/icons/good.png" alt="">Анализ вашей ситуации и документов</div>
-			<div class="text "><img src="@/assets/icons/good.png" alt="">Возможность получить несколько мнений
-			</div>
-			<div class="text "><img src="@/assets/icons/good.png" alt="">Консультации онлайн в удобное время</div>
-		</div>
+	<div class="container">
 
-	</div>
-	<img src="@/assets/line.png" alt="">
-	<div class="main2">
-		<h2>Как работает сервис?</h2>
-		<div class="blocks1">
-			<div class="block"><img src="@/assets/icons/1.png" alt="">
-				<h3>Оформите подписку</h3>
-				<p>Оплатите по заданным реквизитам. С вами свяжется менеджер и в течении пяти минут ознакомит с
-					возможностями
-					Сайта. Для вас выделена команда специалистов различных направлений. Опишите вопрос и получите
-					исчерпывающий
-					ответ с правовым обоснованием в течении часа.</p>
+		<div class="main1">
+			<!-- <my-carousel :carousel_data="sliderItems"></my-carousel> -->
+			<img class="bg" src="@/assets/bg.jpg" alt="">
+			<div class="icons__block">
+				<div class="text "> <img src="@/assets/icons/good.png" alt="">Разъяснения закона и дальнейших действий
+				</div>
+				<div class="text "><img src="@/assets/icons/good.png" alt="">Анализ вашей ситуации и документов</div>
+				<div class="text "><img src="@/assets/icons/good.png" alt="">Возможность получить несколько мнений
+				</div>
+				<div class="text "><img src="@/assets/icons/good.png" alt="">Консультации онлайн в удобное время</div>
 			</div>
-			<div class="block vector__block">
-				<div><img src="@/assets/Vector.svg" alt=""></div>
-				<div class='vector__block2'>
-					<h4>Вы можете взять пробный пакет «Разовый»</h4>
-					Он позволит оценить качество сервиса и убедиться, что
-					специалисты нашей платформы решат любую проблему. Пакет услуг действует без ограничений по периоду
-					времени.
+
+		</div>
+		<img src="@/assets/line.png" alt="">
+		<div class="main2">
+			<h2>Как работает сервис?</h2>
+			<div class="blocks1">
+				<div class="block"><img src="@/assets/icons/1.png" alt="">
+					<h3>Оформите подписку</h3>
+					<p>Оплатите по заданным реквизитам. С вами свяжется менеджер и в течении пяти минут ознакомит с
+						возможностями
+						Сайта. Для вас выделена команда специалистов различных направлений. Опишите вопрос и получите
+						исчерпывающий
+						ответ с правовым обоснованием в течении часа.</p>
+				</div>
+				<div class="block vector__block">
+					<div><img src="@/assets/Vector.svg" alt=""></div>
+					<div class='vector__block2'>
+						<h4>Вы можете взять пробный пакет «Разовый»</h4>
+						Он позволит оценить качество сервиса и убедиться, что
+						специалисты нашей платформы решат любую проблему. Пакет услуг действует без ограничений по
+						периоду
+						времени.
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="blocks1">
-			<div class="block"><img src="@/assets/icons/1.png" alt="">
-				<h3>Эксперты готовы к решению любой задачи</h3>
-				<p>Моментальные ответы. Команда всегда на связи. Представленные возможности для бизнеса полностью заменят
-					штатного юриста, который не может быть экспертом во всех областях права. Команда юристов, бухгалтеров,
-					кадастровых инженеров разрешит любую проблему. </p>
+			<div class="blocks1">
+				<div class="block"><img src="@/assets/icons/1.png" alt="">
+					<h3>Эксперты готовы к решению любой задачи</h3>
+					<p>Моментальные ответы. Команда всегда на связи. Представленные возможности для бизнеса полностью
+						заменят
+						штатного юриста, который не может быть экспертом во всех областях права. Команда юристов,
+						бухгалтеров,
+						кадастровых инженеров разрешит любую проблему. </p>
+				</div>
+				<div class="block"><img src="@/assets/icons/1.png" alt="">
+					<h3>Мгновенное решение проблемы</h3>
+					<p>В пакет услуг входят любые хозяйственные документы для организации, а также аналитика и
+						разработка
+						договоров. Решение проблем с госорганами по Гос.закупкам, с налоговой и др. Иски любой
+						сложности,
+						жалобы
+						на должностных лиц и иные индивидуально-составные документы заказываются отдельно.</p>
+				</div>
 			</div>
-			<div class="block"><img src="@/assets/icons/1.png" alt="">
-				<h3>Мгновенное решение проблемы</h3>
-				<p>В пакет услуг входят любые хозяйственные документы для организации, а также аналитика и разработка
-					договоров. Решение проблем с госорганами по Гос.закупкам, с налоговой и др. Иски любой сложности,
-					жалобы
-					на должностных лиц и иные индивидуально-составные документы заказываются отдельно.</p>
+			<div class="btns1">
+				<button class="btn btn_blue">Подписаться</button>
+				<button class="btn btn_green">Позвонить</button>
 			</div>
-		</div>
-		<div class="btns1">
-			<button class="btn btn_blue">Подписаться</button>
-			<button class="btn btn_green">Позвонить</button>
 		</div>
 	</div>
 	<!-- </CContainer> -->
@@ -89,6 +95,11 @@ export default {
 
 <style lang="scss" scoped>
 * {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
 	margin: 0;
 	padding: 0;
 }
