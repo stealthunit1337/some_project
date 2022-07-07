@@ -1,9 +1,11 @@
 <template>
+
 	<my-header></my-header>
 	<div class="app">
 		<router-view></router-view>
 	</div>
 	<my-footer></my-footer>
+
 
 
 </template>
@@ -27,7 +29,7 @@ export default {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	max-width: 1200px;
+	/* max-width: 1200px; */
 }
 
 p {
@@ -35,10 +37,10 @@ p {
 	/* background-color: rgba(244, 243, 253, 0.747); */
 }
 
-.app {
-	/* border: 3px green solid; */
-	/* background-color: lightgrey; */
-	min-height: 1500px;
-	max-width: 1200px;
-}
+/* .app { */
+/* border: 3px green solid; */
+/* background-color: lightgrey; */
+/* min-height: 1500px; */
+/* max-width: 1200px; */
+/* } */
 </style>

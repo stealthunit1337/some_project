@@ -15,7 +15,7 @@
 			</div>
 
 		</div>
-		<img src="@/assets/line.png" alt="">
+		<!-- <img src="@/assets/line.png" alt=""> -->
 		<div class="main2">
 			<h2>Как работает сервис?</h2>
 			<div class="blocks1">
@@ -63,7 +63,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- </CContainer> -->
+
 </template>
 
 
@@ -94,52 +94,53 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/scss/mixins";
+
 * {
 	margin: 0;
 	padding: 0;
 }
 
-.container {
-	margin: 0;
-	padding: 0;
-}
-
 .main1 {
-	max-width: 1200px;
+	// max-width: 1200px;
 	overflow: hidden;
-}
-
-.bg {
-	height: 100%;
-	width: 100%;
-}
-
-// .icons {
-//     display: flex;
-//     justify-content: space-evenly
-// }
-
-.icons__block {
-	display: flex;
-	// flex-direction: row;
-	justify-content: space-evenly;
-	padding: 64px 0;
-	border-radius: 48px 48px 0px 0px;
-	background: #FFFFFF;
-	// position: absolute;
-	top: 496px;
-	// width: 1200px;
-	height: 256px;
-	left: 0px;
 
 
-	.text {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		max-width: 18%;
-		text-align: center;
+	.bg {
+		height: 100%;
+		width: 100%;
 	}
+
+	// .icons {
+	//     display: flex;
+	//     justify-content: space-evenly
+	// }
+
+	.icons__block {
+		display: flex;
+		@include direction;
+		justify-content: space-evenly;
+		padding: 64px 0;
+		border-radius: 48px 48px 0px 0px;
+		background: #FFFFFF;
+
+		.text {
+			display: flex;
+			@include direction2;
+			align-items: center;
+			text-align: center;
+		}
+	}
+
+	// @include styler($window-width); 
+	// position: absolute;
+	// width: 1200px;
+	// top: 496px;
+	// height: 256px;
+	// left: 0px;
+
+
+
 }
 
 .main2 {
@@ -149,13 +150,14 @@ export default {
 
 	.blocks1 {
 		display: flex;
-		flex-direction: row;
+		@include direction;
 		align-items: center;
 		justify-content: space-evenly;
-		margin-top: 32px;
+
 
 		.block {
 			padding: 0 15px;
+			margin-top: 32px;
 		}
 
 		.vector__block {
@@ -177,22 +179,7 @@ export default {
 		margin-left: 3px;
 
 		.btn {
-			// display: flex;
-			// flex-direction: row;
-			// justify-content: center;
-			// align-items: center;
-			width: 190px;
-			height: 48px;
-			border-radius: 22px;
-			border: none;
-			margin: 0 12px;
-			font-family: 'Inter';
-			font-style: normal;
-			font-weight: 600;
-			font-size: 16px;
-			line-height: 140%;
-			text-align: center;
-			color: #FFFFFF;
+			@include btn
 		}
 
 		.btn_green {
@@ -212,28 +199,14 @@ h2 {
 }
 
 h3 {
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 600;
-	font-size: 20px;
-	line-height: 160%;
-	margin-bottom: 8px;
+	@include h3
 }
 
 h4 {
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 600;
-	font-size: 16px;
-	line-height: 147%;
-	margin-bottom: 8px;
+	@include h4
 }
 
 p {
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 150%;
+	@include p
 }
 </style>

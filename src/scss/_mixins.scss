@@ -1,0 +1,56 @@
+@mixin p{
+    font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+}
+
+@mixin h4{
+    font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 147%;
+	margin-bottom: 8px;
+}
+
+@mixin h3{
+    font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 160%;
+	margin-bottom: 8px;
+}
+
+@mixin btn{
+    width: 190px;
+    height: 48px;
+    border-radius: 22px;
+    border: none;
+    margin: 0 12px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+@mixin direction{
+    flex-direction: column;
+    @media (min-width: 768px){
+        flex-direction: row;
+    }
+}
+
+@mixin direction2{
+    flex-direction: row;
+    max-width: 80%;
+    @media (min-width: 768px){
+        flex-direction: column;
+        max-width: 20%;
+    }
+}
