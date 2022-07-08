@@ -266,6 +266,11 @@ export default {
 		margin-left: 45px;
 		margin-right: 45px;
 
+		@media (min-width: 768px) and (max-width: 1199.98px) {
+			margin-left: 39px;
+			margin-right: 39px;
+		}
+
 		@media (max-width: 768px) {
 			flex-direction: column;
 			margin: 0;
