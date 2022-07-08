@@ -343,7 +343,7 @@ export default {
 
 			@media (max-width: 768px) {
 				width: 100%;
-				margin: 24px 0 0 0;
+				margin: 0;
 			}
 
 			.b_2_1 {
