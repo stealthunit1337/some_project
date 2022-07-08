@@ -35,7 +35,7 @@ export default {
 }
 
 .home__btn {
-	position: absolute;
+	position: relative;
 	left: 15px
 }
 </style>
