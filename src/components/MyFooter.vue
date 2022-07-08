@@ -1,9 +1,11 @@
 <template>
-    <footer class="footer">
-        <div class="footer__btns">
-            <my-button @click="$router.push('/footer-view')">footer button</my-button>
-        </div>
-    </footer>
+    <div class="container">
+        <footer class="footer">
+            <div class="footer__btns">
+                <my-button @click="$router.push('/footer-view')">footer button</my-button>
+            </div>
+        </footer>
+    </div>
 </template>
 
 <script>

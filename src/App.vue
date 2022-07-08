@@ -1,12 +1,9 @@
 <template>
-
 	<my-header></my-header>
 	<div class="app">
 		<router-view></router-view>
 	</div>
 	<my-footer></my-footer>
-
-
 
 </template>
 
@@ -31,6 +28,7 @@ export default {
 	box-sizing: border-box;
 	/* max-width: 1200px; */
 }
+
 
 p {
 	font-size: 50px;

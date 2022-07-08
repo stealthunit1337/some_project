@@ -62,6 +62,41 @@
 				<button class="btn btn_green">Позвонить</button>
 			</div>
 		</div>
+		<div style="background: #F9F9FB;">
+			<h2 style="padding: 64px 15px 0 45px">Категории для бизнеса</h2>
+			<div class="blocks2">
+				<div class="b_1">
+					<div class="b_1_1">
+						<div class="girl1"><img src="@/assets/girl1.png" alt=""></div>
+						<h3>Арбитражные споры</h3>
+						<p>Досудебное урегулирование спора, оценка перспективы судебного спора, досудебная подготовка к
+							спору, экспертиза документов,подготовка правовой позиции по спору, изготовление претензии
+							контрагенту, изготовление иска, возражений, иных документов в рамках судебного дела</p>
+					</div>
+					<div class="b_1_2">
+						<h3>Споры с судебными приставами</h3>
+						<p>Споры в рамках исполнительного производства, споры с службой судебных приставов, оспаривание
+							актов, действий, бездействия, изготовление жалоб, заявлений, исков</p>
+					</div>
+				</div>
+				<div class="b_2">
+					<div class="b_2_1">
+						<h3>Споры с налоговой</h3>
+						<p>Досудебное урегулирование спора, оспаривание актов в сфере налогооблажения, обжалование
+							актов,
+							действий, бездействия должностных лиц ФНС, подача иска в суд</p>
+					</div>
+					<div class="b_2_2">
+						<div class="girl2"><img src="@/assets/girl2.png" alt=""></div>
+						<h3>Госзакупки</h3>
+						<p>Разрешение споров с контролирующими госорганами, подготовка правовой позиции по спору,
+							подготовка
+							к судебному процессу, изготовление заявлений, жалоб, исков, возражений, отзывов в рамках
+							судебного разбирательства</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 </template>
@@ -100,6 +135,7 @@ export default {
 	margin: 0;
 	padding: 0;
 }
+
 
 .main1 {
 	// max-width: 1200px;
@@ -177,6 +213,16 @@ export default {
 	.btns1 {
 		margin-top: 20px;
 		margin-left: 3px;
+		margin-bottom: 64px;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+			justify-content: center;
+		}
 
 		.btn {
 			@include btn
@@ -190,6 +236,101 @@ export default {
 		.btn_blue {
 			background: #229BF4;
 			box-shadow: 0px 6px 12px rgba(34, 155, 244, 0.16);
+		}
+	}
+}
+
+.blocks2 {
+	display: flex;
+	justify-content: center;
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
+
+	.b_1 {
+		width: 45%;
+
+		@media (max-width: 768px) {
+			width: 100%;
+			margin-left: 0px;
+		}
+
+		height: 678px;
+		margin: 32px 15px 0 15px;
+		display: flex;
+		flex-direction: column;
+
+		.b_1_1 {
+			padding: 32px;
+			width: 100%;
+			flex-grow: 446;
+			margin-bottom: 32px;
+			background: #FFFFFF;
+			box-shadow: 0px 6px 12px rgba(223, 225, 233, 0.24);
+			border-radius: 8px;
+
+			.girl1 {
+				width: 182px;
+				height: 182px;
+				left: 32px;
+				top: 32px;
+				background: rgb(209, 176, 209);
+				border-radius: 80px;
+				margin-bottom: 16px;
+
+			}
+		}
+
+		.b_1_2 {
+			padding: 32px;
+			width: 100%;
+			flex-grow: 200;
+			background: #FFFFFF;
+			box-shadow: 0px 6px 12px rgba(223, 225, 233, 0.24);
+			border-radius: 8px;
+		}
+	}
+
+	.b_2 {
+		width: 45%;
+		height: 631px;
+		margin: 56px 15px 0 15px;
+		display: flex;
+		flex-direction: column;
+
+		@media (max-width: 768px) {
+			width: 100%;
+			margin-left: 0px;
+		}
+
+		.b_2_1 {
+			padding: 32px;
+			width: 100%;
+			flex-grow: 176;
+			margin-bottom: 32px;
+			background: #FFFFFF;
+			box-shadow: 0px 6px 12px rgba(223, 225, 233, 0.24);
+			border-radius: 8px;
+		}
+
+		.b_2_2 {
+			padding: 32px;
+			width: 100%;
+			flex-grow: 422;
+			background: #FFFFFF;
+			box-shadow: 0px 6px 12px rgba(223, 225, 233, 0.24);
+			border-radius: 8px;
+
+			.girl2 {
+				width: 182px;
+				height: 182px;
+				left: 32px;
+				top: 32px;
+				background: rgb(219, 200, 93);
+				border-radius: 80px;
+				margin-bottom: 16px;
+			}
 		}
 	}
 }

@@ -1,11 +1,13 @@
 <template>
-	<footer class="header">
-		<my-button class="home__btn" @click="$router.push('/')">home</my-button>
-		<div class="header__btns">
-			<my-button @click="$router.push('/header-view')">header button</my-button>
-			<my-button @click="$router.push('/zakon-biz')">zakon-biz</my-button>
-		</div>
-	</footer>
+	<div class="container">
+		<header class="header">
+			<my-button class="home__btn" @click="$router.push('/')">home</my-button>
+			<div class="header__btns">
+				<my-button @click="$router.push('/header-view')">header button</my-button>
+				<my-button @click="$router.push('/zakon-biz')">zakon-biz</my-button>
+			</div>
+		</header>
+	</div>
 </template>
 
 <script>
