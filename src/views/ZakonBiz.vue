@@ -220,7 +220,7 @@ export default {
 		justify-content: flex-start;
 		align-items: center;
 
-		@media (max-width: 767.99px) {
+		@media (max-width: 767.98px) {
 			flex-direction: column;
 			justify-content: center;
 		}
@@ -272,7 +272,7 @@ export default {
 			margin-right: 39px;
 		}
 
-		@media (max-width: 767.99px) {
+		@media (max-width: 767.98px) {
 			flex-direction: column;
 			margin: 0;
 		}
@@ -286,7 +286,7 @@ export default {
 			// 	width: 43%;
 			// }
 
-			@media (max-width: 767.99px) {
+			@media (max-width: 767.98px) {
 				width: 100%;
 				margin-left: 0px;
 			}
@@ -302,7 +302,7 @@ export default {
 				box-shadow: 0px 6px 12px rgba(223, 225, 233, 0.24);
 				border-radius: 8px;
 
-				@media (max-width: 767.99px) {
+				@media (max-width: 767.98px) {
 					padding: 20px;
 					margin-bottom: 24px;
 				}
@@ -327,7 +327,7 @@ export default {
 				box-shadow: 0px 6px 12px rgba(223, 225, 233, 0.24);
 				border-radius: 8px;
 
-				@media (max-width: 767.99px) {
+				@media (max-width: 767.98px) {
 					padding: 20px;
 				}
 			}
@@ -348,7 +348,7 @@ export default {
 				padding-bottom: 40px;
 			}
 
-			@media (max-width: 767.99px) {
+			@media (max-width: 767.98px) {
 				width: 100%;
 				margin: 0;
 			}
@@ -362,7 +362,7 @@ export default {
 				box-shadow: 0px 6px 12px rgba(223, 225, 233, 0.24);
 				border-radius: 8px;
 
-				@media (max-width: 767.99px) {
+				@media (max-width: 767.98px) {
 					padding: 20px;
 					margin-bottom: 24px;
 				}
@@ -376,7 +376,7 @@ export default {
 				box-shadow: 0px 6px 12px rgba(223, 225, 233, 0.24);
 				border-radius: 8px;
 
-				@media (max-width: 767.99px) {
+				@media (max-width: 767.98px) {
 					padding: 20px;
 				}
 
