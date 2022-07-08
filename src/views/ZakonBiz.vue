@@ -62,8 +62,8 @@
 				<button class="btn btn_green">Позвонить</button>
 			</div>
 		</div>
-		<div style="background: #F9F9FB;">
-			<h2 style="padding: 64px 15px 0 45px">Категории для бизнеса</h2>
+		<div class="main3">
+			<h2 class='b2_h2'>Категории для бизнеса</h2>
 			<div class="blocks2">
 				<div class="b_1">
 					<div class="b_1_1">
@@ -107,23 +107,23 @@
 // import { CContainer } from '@coreui/vue'
 
 export default {
-	components: {
-		// MyCarousel
-		// CContainer
-	},
-	data() {
-		return {
-			sliderItems:
-				[
-					{ id: 1, name: 'img1', img: '1.jpg' },
-					{ id: 2, name: 'img2', img: '2.jpg' },
-					{ id: 3, name: 'img3', img: '3.jpg' },
-					{ id: 4, name: 'img4', img: '4.jpg' },
-					{ id: 5, name: 'img5', img: '5.jpg' },
-				]
+	// components: {
+	// MyCarousel
+	// CContainer
+	// },
+	// data() {
+	// 	return {
+	// 		sliderItems:
+	// 			[
+	// 				{ id: 1, name: 'img1', img: '1.jpg' },
+	// 				{ id: 2, name: 'img2', img: '2.jpg' },
+	// 				{ id: 3, name: 'img3', img: '3.jpg' },
+	// 				{ id: 4, name: 'img4', img: '4.jpg' },
+	// 				{ id: 5, name: 'img5', img: '5.jpg' },
+	// 			]
 
-		}
-	}
+	// 	}
+	// }
 
 }
 </script>
@@ -240,96 +240,143 @@ export default {
 	}
 }
 
-.blocks2 {
-	display: flex;
-	justify-content: center;
 
-	@media (max-width: 768px) {
-		flex-direction: column;
-	}
+.main3 {
+	padding: 65px 0 64px 0;
+	background: #F9F9FB;
 
-	.b_1 {
-		width: 45%;
+	.b2_h2 {
+		padding-left: 45px;
 
-		@media (max-width: 768px) {
-			width: 100%;
-			margin-left: 0px;
+		@media (max-width: 1200px) {
+			padding-left: 39px;
 		}
 
-		height: 678px;
-		margin: 32px 15px 0 15px;
+		@media (max-width: 768px) {
+			display: flex;
+			justify-content: center;
+			padding: 0;
+		}
+
+	}
+
+	.blocks2 {
 		display: flex;
-		flex-direction: column;
+		justify-content: center;
 
-		.b_1_1 {
-			padding: 32px;
-			width: 100%;
-			flex-grow: 446;
-			margin-bottom: 32px;
-			background: #FFFFFF;
-			box-shadow: 0px 6px 12px rgba(223, 225, 233, 0.24);
-			border-radius: 8px;
+		@media (max-width: 768px) {
+			flex-direction: column;
+		}
 
-			.girl1 {
-				width: 182px;
-				height: 182px;
-				left: 32px;
-				top: 32px;
-				background: rgb(209, 176, 209);
-				border-radius: 80px;
-				margin-bottom: 16px;
+		.b_1 {
+			width: 45%;
 
+			@media (min-width: 768px) and (max-width: 1199.98px) {
+				width: 43%;
+			}
+
+			@media (max-width: 768px) {
+				width: 100%;
+				margin-left: 0px;
+			}
+
+			// height: 678px;
+			margin: 32px 15px 0 0;
+			display: flex;
+			flex-direction: column;
+
+			.b_1_1 {
+				padding: 32px;
+				width: 100%;
+				flex-grow: 446;
+				margin-bottom: 32px;
+				background: #FFFFFF;
+				box-shadow: 0px 6px 12px rgba(223, 225, 233, 0.24);
+				border-radius: 8px;
+
+				@media (max-width: 768px) {
+					padding: 20px;
+					margin-bottom: 24px;
+				}
+
+				.girl1 {
+					width: 182px;
+					height: 182px;
+					left: 32px;
+					top: 32px;
+					background: rgb(209, 176, 209);
+					border-radius: 80px;
+					margin-bottom: 16px;
+
+				}
+			}
+
+			.b_1_2 {
+				padding: 32px;
+				width: 100%;
+				flex-grow: 200;
+				background: #FFFFFF;
+				box-shadow: 0px 6px 12px rgba(223, 225, 233, 0.24);
+				border-radius: 8px;
+
+				@media (max-width: 768px) {
+					padding: 20px;
+				}
 			}
 		}
 
-		.b_1_2 {
-			padding: 32px;
-			width: 100%;
-			flex-grow: 200;
-			background: #FFFFFF;
-			box-shadow: 0px 6px 12px rgba(223, 225, 233, 0.24);
-			border-radius: 8px;
-		}
-	}
+		.b_2 {
+			width: 45%;
+			// height: 631px;
+			margin: 56px 0 0 15px;
+			display: flex;
+			flex-direction: column;
 
-	.b_2 {
-		width: 45%;
-		height: 631px;
-		margin: 56px 15px 0 15px;
-		display: flex;
-		flex-direction: column;
+			@media (min-width: 768px) and (max-width: 1199.98px) {
+				width: 43%;
+			}
 
-		@media (max-width: 768px) {
-			width: 100%;
-			margin-left: 0px;
-		}
+			@media (max-width: 768px) {
+				width: 100%;
+				margin: 24px 0 0 0;
+			}
 
-		.b_2_1 {
-			padding: 32px;
-			width: 100%;
-			flex-grow: 176;
-			margin-bottom: 32px;
-			background: #FFFFFF;
-			box-shadow: 0px 6px 12px rgba(223, 225, 233, 0.24);
-			border-radius: 8px;
-		}
+			.b_2_1 {
+				padding: 32px;
+				width: 100%;
+				flex-grow: 176;
+				margin-bottom: 32px;
+				background: #FFFFFF;
+				box-shadow: 0px 6px 12px rgba(223, 225, 233, 0.24);
+				border-radius: 8px;
 
-		.b_2_2 {
-			padding: 32px;
-			width: 100%;
-			flex-grow: 422;
-			background: #FFFFFF;
-			box-shadow: 0px 6px 12px rgba(223, 225, 233, 0.24);
-			border-radius: 8px;
+				@media (max-width: 768px) {
+					padding: 20px;
+					margin-bottom: 24px;
+				}
+			}
 
-			.girl2 {
-				width: 182px;
-				height: 182px;
-				left: 32px;
-				top: 32px;
-				background: rgb(219, 200, 93);
-				border-radius: 80px;
-				margin-bottom: 16px;
+			.b_2_2 {
+				padding: 32px;
+				width: 100%;
+				flex-grow: 422;
+				background: #FFFFFF;
+				box-shadow: 0px 6px 12px rgba(223, 225, 233, 0.24);
+				border-radius: 8px;
+
+				@media (max-width: 768px) {
+					padding: 20px;
+				}
+
+				.girl2 {
+					width: 182px;
+					height: 182px;
+					left: 32px;
+					top: 32px;
+					background: rgb(219, 200, 93);
+					border-radius: 80px;
+					margin-bottom: 16px;
+				}
 			}
 		}
 	}

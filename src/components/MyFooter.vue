@@ -23,7 +23,7 @@ export default {
     display: flex;
     margin: 0;
     padding: 0;
-    position: sticky;
+    position: static;
     bottom: 0px;
 }
 
