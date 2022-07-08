@@ -268,6 +268,7 @@ export default {
 
 		@media (max-width: 768px) {
 			flex-direction: column;
+			margin: 0;
 		}
 
 		.b_1 {
