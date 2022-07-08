@@ -263,17 +263,21 @@ export default {
 	.blocks2 {
 		display: flex;
 		justify-content: center;
+		margin-left: 45px;
+		margin-right: 45px;
 
 		@media (max-width: 768px) {
 			flex-direction: column;
 		}
 
 		.b_1 {
-			width: 45%;
-
-			@media (min-width: 768px) and (max-width: 1199.98px) {
-				width: 43%;
-			}
+			width: 50%;
+			margin: 32px 15px 0 0;
+			display: flex;
+			flex-direction: column;
+			// @media (min-width: 768px) and (max-width: 1199.98px) {
+			// 	width: 43%;
+			// }
 
 			@media (max-width: 768px) {
 				width: 100%;
@@ -281,9 +285,6 @@ export default {
 			}
 
 			// height: 678px;
-			margin: 32px 15px 0 0;
-			display: flex;
-			flex-direction: column;
 
 			.b_1_1 {
 				padding: 32px;
@@ -326,14 +327,18 @@ export default {
 		}
 
 		.b_2 {
-			width: 45%;
+			width: 50%;
 			// height: 631px;
-			margin: 56px 0 0 15px;
+			margin: 32px 0 0 15px;
+			padding-top: 24px;
+			padding-bottom: 24px;
 			display: flex;
 			flex-direction: column;
 
 			@media (min-width: 768px) and (max-width: 1199.98px) {
-				width: 43%;
+				// width: 43%;
+				padding-top: 40px;
+				padding-bottom: 40px;
 			}
 
 			@media (max-width: 768px) {
