@@ -1,8 +1,24 @@
 
 <template >
-	<div class="container">
-
-		<div class="main1">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-link active" aria-current="page" href="#">Home</a>
+					<a class="nav-link" href="#">Features</a>
+					<a class="nav-link" href="#">Pricing</a>
+					<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="main1">
+		<div class="container">
 			<!-- <my-carousel :carousel_data="sliderItems"></my-carousel> -->
 			<img class="bg" src="@/assets/bg.jpg" alt="">
 			<div class="icons__block">
@@ -13,10 +29,11 @@
 				</div>
 				<div class="text "><img src="@/assets/icons/good.png" alt="">Консультации онлайн в удобное время</div>
 			</div>
-
 		</div>
-		<!-- <img src="@/assets/line.png" alt=""> -->
-		<div class="main2">
+	</div>
+	<!-- <img src="@/assets/line.png" alt=""> -->
+	<div class="main2">
+		<div class="container">
 			<h2>Как работает сервис?</h2>
 			<div class="blocks1">
 				<div class="block"><img src="@/assets/icons/1.png" alt="">
@@ -62,7 +79,9 @@
 				<button class="btn btn_green">Позвонить</button>
 			</div>
 		</div>
-		<div class="main3">
+	</div>
+	<div class="main3">
+		<div class="container">
 			<h2 class='b2_h2'>Категории для бизнеса</h2>
 			<div class="blocks2">
 				<div class="b_1">
@@ -104,12 +123,10 @@
 
 <script>
 // import MyCarousel from '@/components/MyCarousel.vue'
-// import { CContainer } from '@coreui/vue'
 
 export default {
 	// components: {
 	// MyCarousel
-	// CContainer
 	// },
 	// data() {
 	// 	return {
@@ -129,7 +146,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/scss/mixins";
+@import "@/assets/scss/mixins";
 
 
 * {
@@ -182,7 +199,7 @@ export default {
 
 .main2 {
 	margin-top: 65px;
-	padding: 0 30px;
+	// padding: 0 30px;
 	background: #FFFFFF;
 
 	.blocks1 {
@@ -193,7 +210,7 @@ export default {
 
 
 		.block {
-			padding: 0 15px;
+			// padding: 0 15px;
 			margin-top: 32px;
 		}
 
@@ -232,6 +249,10 @@ export default {
 		.btn_green {
 			background: #00C38B;
 			box-shadow: 0px 6px 12px rgba(0, 195, 139, 0.16);
+
+			@media (max-width: 767.98px) {
+				margin-top: 24px;
+			}
 		}
 
 		.btn_blue {
@@ -243,17 +264,21 @@ export default {
 
 
 .main3 {
+
 	padding: 65px 0 64px 0;
 	background: #F9F9FB;
 
 	.b2_h2 {
-		padding-left: 45px;
+		// padding-left: 45px;
 
 		@media (max-width: 1200px) {
-			padding-left: 39px;
+			padding-left: 3px;
 		}
 
-		@media (max-width: 768px) {
+		margin-left: 3px;
+		margin-right: 3px;
+
+		@media (max-width: 767.98px) {
 			display: flex;
 			justify-content: center;
 			padding: 0;
@@ -264,13 +289,15 @@ export default {
 	.blocks2 {
 		display: flex;
 		justify-content: center;
-		margin-left: 45px;
-		margin-right: 45px;
+		margin-left: 3px;
+		margin-right: 3px;
+		// margin-left: 45px;
+		// margin-right: 45px;
 
-		@media (min-width: 768px) and (max-width: 1199.98px) {
-			margin-left: 39px;
-			margin-right: 39px;
-		}
+		// @media (min-width: 768px) and (max-width: 1199.98px) {
+		// 	margin-left: 3px;
+		// 	margin-right: 3px;
+		// }
 
 		@media (max-width: 767.98px) {
 			flex-direction: column;
@@ -394,9 +421,10 @@ export default {
 	}
 }
 
-h2 {
-	padding: 0 15px;
-}
+
+// h2 {
+// 	padding: 0 15px;
+// }
 
 h3 {
 	@include h3

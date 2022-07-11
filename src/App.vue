@@ -1,22 +1,22 @@
 <template>
-	<my-header></my-header>
+	<!-- <my-header></my-header> -->
 	<div class="app">
 		<router-view></router-view>
 	</div>
-	<my-footer></my-footer>
+	<!-- <my-footer></my-footer> -->
 
 </template>
 
 <script>
-import MyFooter from './components/MyFooter.vue'
-import MyHeader from './components/MyHeader.vue'
+// import MyFooter from './components/MyFooter.vue'
+// import MyHeader from './components/MyHeader.vue'
 
 export default {
 	name: 'App',
 	components: {
 		// HelloWorld,
-		MyHeader,
-		MyFooter
+		// MyHeader,
+		// MyFooter
 	}
 }
 </script>
