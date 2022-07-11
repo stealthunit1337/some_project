@@ -1,33 +1,23 @@
 
 <template >
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#">Navbar</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div class="navbar-nav">
-					<a class="nav-link active" aria-current="page" href="#">Home</a>
-					<a class="nav-link" href="#">Features</a>
-					<a class="nav-link" href="#">Pricing</a>
-					<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-				</div>
-			</div>
-		</div>
-	</nav>
+	<div class="bg_box">
+		<img v-if="device == 'pc'" src="@/assets/img/bg-pc.svg" alt="">
+		<img v-else src="@/assets/img/bg-tablet.svg" alt="">
+		<!-- <img v-if="device == 'mobile'" src="@/assets/img/bg-mobile.svg" alt="">
+		<img v-if="device == 'tablet'" src="@/assets/img/bg-tablet.svg" alt="">
+		<img v-if="device == 'desktop'" src="@/assets/img/bg-pc.svg" alt=""> -->
+	</div>
 	<div class="main1">
 		<div class="container">
 			<!-- <my-carousel :carousel_data="sliderItems"></my-carousel> -->
-			<img class="bg" src="@/assets/bg.jpg" alt="">
+
 			<div class="icons__block">
-				<div class="text "> <img src="@/assets/icons/good.png" alt="">Разъяснения закона и дальнейших действий
+				<div class="text "> <img src="@/assets/icons/good-48.svg" alt="">Разъяснения закона и дальнейших действий
 				</div>
-				<div class="text "><img src="@/assets/icons/good.png" alt="">Анализ вашей ситуации и документов</div>
-				<div class="text "><img src="@/assets/icons/good.png" alt="">Возможность получить несколько мнений
+				<div class="text "><img src="@/assets/icons/good-48.svg" alt="">Анализ вашей ситуации и документов</div>
+				<div class="text "><img src="@/assets/icons/good-48.svg" alt="">Возможность получить несколько мнений
 				</div>
-				<div class="text "><img src="@/assets/icons/good.png" alt="">Консультации онлайн в удобное время</div>
+				<div class="text "><img src="@/assets/icons/good-48.svg" alt="">Консультации онлайн в удобное время</div>
 			</div>
 		</div>
 	</div>
@@ -117,6 +107,8 @@
 			</div>
 		</div>
 	</div>
+
+
 </template>
 
 
@@ -140,8 +132,32 @@ export default {
 
 	// 	}
 	// }
+	data() {
+		return {
+			device: '',
+		};
+	},
 
+	methods:
+	{
+		deviceCheck() {
+			if (window.innerWidth >= 1200) {
+				console.log('pc')
+				this.device = 'pc'
+			}
+			else if (768 <= window.outerWidth < 1200) {
+				console.log('tab')
+				this.device = 'tablet'
+			}
+
+		}
+
+	},
+	created() {
+		this.deviceCheck();
+	},
 }
+
 </script>
 
 <style lang="scss" scoped>
@@ -153,32 +169,71 @@ export default {
 	padding: 0;
 }
 
+.bg_box img {
+	width: 100%;
+	height: 464px;
+	object-fit: none;
+	object-position: 50%;
+
+}
+
 .main1 {
-	// max-width: 1200px;
-	overflow: hidden;
-
-
-	.bg {
-		height: 100%;
-		width: 100%;
-	}
-
-	// .icons {
-	//     display: flex;
-	//     justify-content: space-evenly
-	// }
 
 	.icons__block {
 		display: flex;
-		@include direction;
-		justify-content: space-evenly;
-		padding: 64px 0;
-		border-radius: 48px 48px 0px 0px;
+		flex-direction: column;
+
+		@media (min-width: 768px) {
+			flex-direction: row;
+			padding-right: -12px;
+			padding-left: -12px;
+			justify-content: space-between;
+
+
+		}
+
+		padding: 64px 8px;
+		padding-top: 40px;
 		background: #FFFFFF;
+
 
 		.text {
 			display: flex;
-			@include direction2;
+			flex-direction: row;
+			text-align: left;
+			margin-top: 24px;
+
+
+
+			:first-child {
+				margin-right: 24px;
+			}
+
+
+
+
+
+
+			@media (min-width: 768px) {
+				flex-direction: column;
+				margin-left: 15px;
+				margin-right: 15px;
+
+				:first-child {
+					margin-right: 0px;
+				}
+
+
+				&:first-child {
+					margin-left: -15px;
+				}
+
+				&:last-child {
+					margin-right: -15px;
+				}
+
+			}
+
 			align-items: center;
 			text-align: center;
 		}
@@ -270,11 +325,11 @@ export default {
 		// padding-left: 45px;
 
 		@media (max-width: 1200px) {
-			padding-left: 3px;
+			margin-left: -12px;
 		}
 
-		margin-left: 3px;
-		margin-right: 3px;
+		margin-left: -12px;
+		margin-right: -12px;
 
 		@media (max-width: 767.98px) {
 			display: flex;
@@ -287,19 +342,13 @@ export default {
 	.blocks2 {
 		display: flex;
 		justify-content: center;
-		margin-left: 3px;
-		margin-right: 3px;
-		// margin-left: 45px;
-		// margin-right: 45px;
-
-		// @media (min-width: 768px) and (max-width: 1199.98px) {
-		// 	margin-left: 3px;
-		// 	margin-right: 3px;
-		// }
+		margin-left: -12px;
+		margin-right: -12px;
 
 		@media (max-width: 767.98px) {
 			flex-direction: column;
-			margin: 0;
+			margin-left: -12px;
+			margin-right: -12px;
 		}
 
 		.b_1 {
@@ -307,16 +356,10 @@ export default {
 			margin: 32px 15px 0 0;
 			display: flex;
 			flex-direction: column;
-			// @media (min-width: 768px) and (max-width: 1199.98px) {
-			// 	width: 43%;
-			// }
 
 			@media (max-width: 767.98px) {
 				width: 100%;
-				margin-left: 0px;
 			}
-
-			// height: 678px;
 
 			.b_1_1 {
 				padding: 32px;
@@ -360,7 +403,6 @@ export default {
 
 		.b_2 {
 			width: 50%;
-			// height: 631px;
 			margin: 32px 0 0 15px;
 			padding-top: 24px;
 			padding-bottom: 24px;
@@ -368,7 +410,6 @@ export default {
 			flex-direction: column;
 
 			@media (min-width: 768px) and (max-width: 1199.98px) {
-				// width: 43%;
 				padding-top: 40px;
 				padding-bottom: 40px;
 			}
