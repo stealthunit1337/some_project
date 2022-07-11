@@ -117,7 +117,6 @@
 			</div>
 		</div>
 	</div>
-
 </template>
 
 
@@ -153,7 +152,6 @@ export default {
 	margin: 0;
 	padding: 0;
 }
-
 
 .main1 {
 	// max-width: 1200px;
