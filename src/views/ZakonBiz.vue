@@ -1,27 +1,24 @@
-
 <template >
-	<div class="bg_box">
+	<!-- <div class="bg_box">
 		<img v-if="device == 'pc'" src="@/assets/img/bg-pc.svg" alt="">
 		<img v-else src="@/assets/img/bg-tablet.svg" alt="">
-		<!-- <img v-if="device == 'mobile'" src="@/assets/img/bg-mobile.svg" alt="">
-		<img v-if="device == 'tablet'" src="@/assets/img/bg-tablet.svg" alt="">
-		<img v-if="device == 'desktop'" src="@/assets/img/bg-pc.svg" alt=""> -->
 	</div>
 	<div class="main1">
 		<div class="container">
-			<!-- <my-carousel :carousel_data="sliderItems"></my-carousel> -->
+
 
 			<div class="icons__block">
-				<div class="text "> <img src="@/assets/icons/good-48.svg" alt="">Разъяснения закона и дальнейших действий
+				<div class="text "> <img src="@/assets/icons/good-48.svg" alt="">Разъяснения закона и дальнейших
+					действий
 				</div>
 				<div class="text "><img src="@/assets/icons/good-48.svg" alt="">Анализ вашей ситуации и документов</div>
 				<div class="text "><img src="@/assets/icons/good-48.svg" alt="">Возможность получить несколько мнений
 				</div>
-				<div class="text "><img src="@/assets/icons/good-48.svg" alt="">Консультации онлайн в удобное время</div>
+				<div class="text "><img src="@/assets/icons/good-48.svg" alt="">Консультации онлайн в удобное время
+				</div>
 			</div>
 		</div>
 	</div>
-	<!-- <img src="@/assets/line.png" alt=""> -->
 	<div class="main2">
 		<div class="container">
 			<h2>Как работает сервис?</h2>
@@ -106,6 +103,54 @@
 				</div>
 			</div>
 		</div>
+	</div> -->
+
+	<div class="main4">
+		<div class="container">
+			<h2 style="display: flex; justify-content: center;">Тарифы для бизнеса</h2>
+			<div class="box4">
+				<h3>Разовый</h3>
+				<p class="p4 p4_1">Проверить качество сервиса и решить один юридический вопрос</p>
+				<ul>
+					<li>Срочная консультация развернутого типа </li>
+					<li>Мнение двух экспертов</li>
+					<li>Анализ документов</li>
+				</ul>
+				<div>
+					<p></p>
+					<button class="btn btn_greenп"></button>
+				</div>
+			</div>
+			<div class="box4">
+				<h3>Минимальный</h3>
+				<p class="p4 p4_2">Специальное предложение</p>
+				<ul>
+					<li>6 подробных развернутых консультаций по любому вопросу</li>
+					<li>Мнение двух экспертов</li>
+					<li>Изготовление 5 документов на выбор</li>
+				</ul>
+				<button>Посмотреть виды документов</button>
+				<div>
+					<p></p>
+					<button class="btn btn_green"></button>
+				</div>
+			</div>
+			<div class="box4">
+				<h3>Стандартный</h3>
+				<p class="p4 p4_3">Отличная помощь сотрудникам</p>
+				<ul>
+					<li>6 подробных развернутых консультаций по любому вопросу</li>
+					<li>Мнение двух экспертов</li>
+					<li>Изготовление 5 документов на выбор</li>
+				</ul>
+				<button>Посмотреть виды документов</button>
+				<div>
+					<p></p>
+					<button class="btn btn_green"></button>
+				</div>
+			</div>
+		</div>
+
 	</div>
 
 
@@ -113,25 +158,9 @@
 
 
 <script>
-// import MyCarousel from '@/components/MyCarousel.vue'
 
 export default {
-	// components: {
-	// MyCarousel
-	// },
-	// data() {
-	// 	return {
-	// 		sliderItems:
-	// 			[
-	// 				{ id: 1, name: 'img1', img: '1.jpg' },
-	// 				{ id: 2, name: 'img2', img: '2.jpg' },
-	// 				{ id: 3, name: 'img3', img: '3.jpg' },
-	// 				{ id: 4, name: 'img4', img: '4.jpg' },
-	// 				{ id: 5, name: 'img5', img: '5.jpg' },
-	// 			]
 
-	// 	}
-	// }
 	data() {
 		return {
 			device: '',
@@ -174,7 +203,9 @@ export default {
 	height: 464px;
 	object-fit: none;
 	object-position: 50%;
-
+	// background-image: url(https://media.istockphoto.com/photos/tug-of-war-two-businessman-pulling-a-rope-in-opposite-directions-picture-id1177462304);
+	// height: 100%;
+	// width: 100%;
 }
 
 .main1 {
@@ -239,14 +270,6 @@ export default {
 		}
 	}
 
-	// @include styler($window-width); 
-	// position: absolute;
-	// width: 1200px;
-	// top: 496px;
-	// height: 256px;
-	// left: 0px;
-
-
 
 }
 
@@ -295,24 +318,44 @@ export default {
 			justify-content: center;
 		}
 
-		.btn {
-			@include btn
-		}
-
 		.btn_green {
-			background: #00C38B;
-			box-shadow: 0px 6px 12px rgba(0, 195, 139, 0.16);
-
 			@media (max-width: 767.98px) {
 				margin-top: 24px;
 			}
 		}
 
-		.btn_blue {
-			background: #229BF4;
-			box-shadow: 0px 6px 12px rgba(34, 155, 244, 0.16);
-		}
+
 	}
+}
+
+.btn {
+	width: 190px;
+	height: 48px;
+	border-radius: 22px;
+	border: none;
+	margin: 0 12px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 140%;
+	text-align: center;
+	color: #FFFFFF;
+
+	@media (max-width: 767.98px) {
+		width: 280px;
+		margin: 0px;
+	}
+}
+
+.btn_green {
+	background: #00C38B;
+	box-shadow: 0px 6px 12px rgba(0, 195, 139, 0.16);
+}
+
+.btn_blue {
+	background: #229BF4;
+	box-shadow: 0px 6px 12px rgba(34, 155, 244, 0.16);
 }
 
 
@@ -460,6 +503,75 @@ export default {
 	}
 }
 
+.main4 {
+	background: linear-gradient(90deg, #ECF4FD 0%, #F8F3F1 50%, #F3E2E0 100%);
+	border-radius: 0px 0px 16px 16px;
+
+	.box4 {
+		margin-left: 8px;
+		margin-right: 8px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 24px 16px;
+		gap: 24px;
+		background: #FFFFFF;
+		box-shadow: 0px 6px 12px rgba(223, 225, 233, 0.24);
+		border-radius: 8px;
+		margin-top: 24px
+	}
+
+	.p4 {
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 170%;
+		border-radius: 8px;
+		gap: 10px;
+	}
+
+	.p4_1 {
+		background: #B8DFFC;
+		padding: 8px;
+		text-align: left;
+	}
+
+	.p4_2 {
+		background: #E0D0F9;
+		padding: 8px 24px;
+		text-align: center;
+	}
+
+	.p4_3 {
+		background: #FFE8AE;
+		padding: 8px 24px;
+		text-align: center;
+	}
+
+	ul {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+
+	li {
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 150%;
+	}
+
+	li::marker {
+		color: black;
+		font-size: 1rem;
+
+	}
+}
+
+
+
+
 
 // h2 {
 // 	padding: 0 15px;
@@ -477,3 +589,40 @@ p {
 	@include p
 }
 </style>
+
+
+
+		<!-- <img v-if="device == 'mobile'" src="@/assets/img/bg-mobile.svg" alt="">
+		<img v-if="device == 'tablet'" src="@/assets/img/bg-tablet.svg" alt="">
+		<img v-if="device == 'desktop'" src="@/assets/img/bg-pc.svg" alt=""> -->
+
+					<!-- <my-carousel :carousel_data="sliderItems"></my-carousel> -->
+
+						<!-- // components: {
+	// MyCarousel
+	// },
+	// data() {
+	// 	return {
+	// 		sliderItems:
+	// 			[
+	// 				{ id: 1, name: 'img1', img: '1.jpg' },
+	// 				{ id: 2, name: 'img2', img: '2.jpg' },
+	// 				{ id: 3, name: 'img3', img: '3.jpg' },
+	// 				{ id: 4, name: 'img4', img: '4.jpg' },
+	// 				{ id: 5, name: 'img5', img: '5.jpg' },
+	// 			]
+
+	// 	}
+	// } -->
+
+	<!-- // import MyCarousel from '@/components/MyCarousel.vue' -->
+<!-- 
+		// @include styler($window-width); 
+	// position: absolute;
+	// width: 1200px;
+	// top: 496px;
+	// height: 256px;
+	// left: 0px; -->
+
+
+

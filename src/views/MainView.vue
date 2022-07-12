@@ -2,6 +2,7 @@
     <h1>Welcome home</h1>
     <div class="some__blocks">
         <div class="some__block">
+            <my-button @click="$router.push('/zakon-biz')">zakon-biz</my-button>
             <my-input v-model="account.username" placeholder="username"></my-input>
             <my-input v-model="account.password" placeholder="password"></my-input>
             <my-button @click="saveAccount">click me</my-button>
