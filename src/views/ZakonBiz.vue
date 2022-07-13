@@ -578,7 +578,12 @@ export default {
 // }
 
 h3 {
-	@include h3
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 160%;
+	margin-bottom: 8px;
 }
 
 h4 {
