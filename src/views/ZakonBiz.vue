@@ -108,51 +108,92 @@
 	<div class="main4">
 		<div class="container">
 			<h2 style="display: flex; justify-content: center;">Тарифы для бизнеса</h2>
-			<div class="box4">
-				<h3>Разовый</h3>
-				<p class="p4 p4_1">Проверить качество сервиса и решить один юридический вопрос</p>
-				<ul>
-					<li>Срочная консультация развернутого типа </li>
-					<li>Мнение двух экспертов</li>
-					<li>Анализ документов</li>
-				</ul>
-				<div>
-					<p></p>
-					<button class="btn btn_greenп"></button>
+			<div class="wrapper4">
+				<div class="box4">
+					<h3 style="margin-bottom: -8px;">Разовый</h3>
+					<p class="p4 p4_1">Проверить качество сервиса и решить один юридический вопрос</p>
+					<ul>
+						<li>Срочная консультация развернутого типа </li>
+						<li>Мнение двух экспертов</li>
+						<li>Анализ документов</li>
+					</ul>
+					<div class="price_btn">
+						<p class="price">2 500 ₽</p>
+						<button class="btn btn_green">Выбрать</button>
+					</div>
 				</div>
-			</div>
-			<div class="box4">
-				<h3>Минимальный</h3>
-				<p class="p4 p4_2">Специальное предложение</p>
-				<ul>
-					<li>6 подробных развернутых консультаций по любому вопросу</li>
-					<li>Мнение двух экспертов</li>
-					<li>Изготовление 5 документов на выбор</li>
-				</ul>
-				<button>Посмотреть виды документов</button>
-				<div>
-					<p></p>
-					<button class="btn btn_green"></button>
+				<div class="box4">
+					<h3 style="margin-bottom: -8px;">Минимальный</h3>
+					<p class="p4 p4_2">Специальное предложение</p>
+					<ul>
+						<li>6 подробных развернутых консультаций по любому вопросу</li>
+						<li>Мнение двух экспертов</li>
+						<li>Изготовление 5 документов на выбор</li>
+					</ul>
+					<button class='btn_doc'>Посмотреть виды документов</button>
+					<div class="price_btn">
+						<p class="price">24 900 ₽</p>
+						<button class="btn btn_green">Выбрать</button>
+					</div>
 				</div>
-			</div>
-			<div class="box4">
-				<h3>Стандартный</h3>
-				<p class="p4 p4_3">Отличная помощь сотрудникам</p>
-				<ul>
-					<li>6 подробных развернутых консультаций по любому вопросу</li>
-					<li>Мнение двух экспертов</li>
-					<li>Изготовление 5 документов на выбор</li>
-				</ul>
-				<button>Посмотреть виды документов</button>
-				<div>
-					<p></p>
-					<button class="btn btn_green"></button>
+				<div class="box4">
+					<h3 style="margin-bottom: -8px;">Стандартный</h3>
+					<p class="p4 p4_3">Отличная помощь сотрудникам</p>
+					<ul>
+						<li>6 подробных развернутых консультаций по любому вопросу</li>
+						<li>Мнение двух экспертов</li>
+						<li>Изготовление 5 документов на выбор</li>
+					</ul>
+					<button class='btn_doc'>Посмотреть виды документов</button>
+					<div class="price_btn">
+						<p class="price">96 500 ₽</p>
+						<button class="btn btn_green">Выбрать</button>
+					</div>
 				</div>
 			</div>
 		</div>
 
 	</div>
 
+	<div class="main5">
+		<div class="container">
+			<div class="wrapper5">
+				<h3>Остались вопросы?</h3>
+				<p>Позвоните нам по телефону 8 (800) 456-78-56 или заполните форму ниже.
+					Мы на связи с понедельника по пятницу с 10:00 до 19:00 (мск).</p>
+				<div class="input_box">
+					<input class="input" type="text" placeholder="Имя">
+					<input class="input" type="text" placeholder="Телефон*">
+					<textarea class="textarea" name="" id="" cols="30" rows="10"></textarea>
+					<div class="text5">
+						<p style="color: #7889A2">Нажимая кнопку, Вы подтверждаете согласие на обработку данных и
+							соглашаетесь с <router-link style="color: #191A1E;text-decoration: underline none; "
+								:to="'/'">Политикой конфиденциальности</router-link>
+						</p>
+						<button class="btn btn_blue">Отправить</button>
+					</div>
+
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="main6">
+		<div class="container">
+			<div class="wrapper6">
+				<div class="text6">
+					<h2>Правовые секреты от Zakonbiz</h2>
+					<p>Раз в месяц дайджест законов в вашей почте!</p>
+				</div>
+				<div class="input_btn">
+					<input class="input" type="text">
+					<button class="btn btn_green"></button>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </template>
 
@@ -506,72 +547,270 @@ export default {
 .main4 {
 	background: linear-gradient(90deg, #ECF4FD 0%, #F8F3F1 50%, #F3E2E0 100%);
 	border-radius: 0px 0px 16px 16px;
+	padding-top: 64px;
+	padding-bottom: 64px;
 
-	.box4 {
+
+	@media (min-width: 768px) and (max-width: 1199.98px) {
+		border-radius: 0px 0px 32px 32px;
+	}
+
+	@media (min-width: 1199.98px) {
+		border-radius: 0px 0px 48px 48px;
+	}
+
+
+
+
+
+
+	.wrapper4 {
 		margin-left: 8px;
 		margin-right: 8px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding: 24px 16px;
-		gap: 24px;
-		background: #FFFFFF;
-		box-shadow: 0px 6px 12px rgba(223, 225, 233, 0.24);
-		border-radius: 8px;
-		margin-top: 24px
-	}
 
-	.p4 {
-		font-family: 'Inter';
-		font-style: normal;
-		font-weight: 500;
-		font-size: 14px;
-		line-height: 170%;
-		border-radius: 8px;
-		gap: 10px;
-	}
+		@media (min-width: 768px) and (max-width: 1199.98px) {
+			margin-left: -12px;
+			margin-right: -12px;
+		}
 
-	.p4_1 {
-		background: #B8DFFC;
-		padding: 8px;
-		text-align: left;
-	}
+		@media(min-width: 1200px) {
+			display: flex;
+			flex-direction: row;
+			margin-left: -27px;
+			margin-right: -27px;
 
-	.p4_2 {
-		background: #E0D0F9;
-		padding: 8px 24px;
-		text-align: center;
-	}
+		}
 
-	.p4_3 {
-		background: #FFE8AE;
-		padding: 8px 24px;
-		text-align: center;
-	}
+		.box4 {
 
-	ul {
-		padding-left: 24px;
-		padding-right: 24px;
-	}
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 24px 20px;
+			gap: 24px;
+			background: #FFFFFF;
+			box-shadow: 0px 6px 12px rgba(223, 225, 233, 0.24);
+			border-radius: 8px;
+			margin-top: 24px;
 
-	li {
-		font-family: 'Inter';
-		font-style: normal;
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 150%;
-	}
 
-	li::marker {
-		color: black;
-		font-size: 1rem;
+			@media (min-width: 768px) {
+				padding: 24px
+			}
 
+			@media(min-width: 1200px) {
+				margin-left: 15px;
+				margin-right: 15px;
+			}
+
+		}
+
+		.p4 {
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 170%;
+			border-radius: 8px;
+			gap: 10px;
+		}
+
+		.p4_1 {
+			background: #B8DFFC;
+			padding: 8px;
+			text-align: left;
+		}
+
+		.p4_2 {
+			background: #E0D0F9;
+			padding: 8px 24px;
+			text-align: center;
+		}
+
+		.p4_3 {
+			background: #FFE8AE;
+			padding: 8px 24px;
+			text-align: center;
+		}
+
+		ul {
+			padding-left: 30px;
+			padding-right: 12px;
+
+			// @media (min-width: 768px) {
+			// 	display: flex;
+			// 	flex-direction: column;
+			// }
+		}
+
+		li {
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 150%;
+			padding-bottom: 8px;
+
+			&:last-child {
+				padding-bottom: 0;
+			}
+
+
+		}
+
+		li::marker {
+			color: black;
+			font-size: 1rem;
+
+		}
+
+		.btn_doc {
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 140%;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			color: #229BF4;
+			background: none;
+			border: none;
+			padding-left: 10px;
+			padding-right: 10px;
+			margin-top: -16px;
+		}
+
+		.price_btn {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+
+			@media (min-width: 768px) and (max-width: 1199.98px) {
+				flex-direction: row;
+				align-items: center;
+				width: 100%;
+				justify-content: space-between;
+
+			}
+
+			@media(min-width:1200px) {
+				height: 100%;
+				justify-content: flex-end;
+			}
+
+			.btn {
+				max-width: 232px;
+				margin-top: 24px;
+
+				@media (min-width: 768px) and (max-width: 1199.98px) {
+					max-width: 190px;
+					margin-top: 0;
+				}
+
+				@media(min-width:1200px) {
+					max-width: 190px;
+
+				}
+			}
+
+			.price {
+				font-family: 'Roboto';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 24px;
+				line-height: 140%;
+				text-align: center;
+
+			}
+		}
 	}
 }
 
+.main5 {
+	padding-top: 64px;
+	padding-bottom: 64px;
+	padding-left: 8px;
+	padding-right: 8px;
 
 
+	.wrapper5 {
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
 
+		@media (min-width: 768px) {
+			max-width: 600px;
+			margin: 0 auto
+		}
+
+		.input_box {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			@media (min-width: 768px) {
+				width: 445px;
+				margin: 0 auto
+			}
+
+			.input {
+				font-family: 'Inter';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 170%;
+				border: 1px solid #F1F1F4;
+				border-radius: 22px;
+				margin-top: 24px;
+				padding: 12px 24px;
+
+			}
+
+			.textarea {
+				border: 1px solid #F1F1F4;
+				border-radius: 22px;
+				margin-top: 24px;
+				padding: 12px 24px;
+				margin-bottom: 24px;
+				height: 160px;
+			}
+
+			.text5 {
+				text-align: left;
+
+				p {
+					font-family: 'Inter';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 170%;
+				}
+			}
+
+			.btn {
+				margin-top: 32px;
+
+				@media (min-width: 768px) {
+					margin-top: 24px;
+					align-self: flex-start;
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}
+
+.main6 {
+	background: linear-gradient(90deg, #ECF4FD 0%, #F8F3F1 50%, #F3E2E0 100%);
+
+	.wrapper6 {
+		display: flex;
+		flex-direction: column;
+
+	}
+}
 
 // h2 {
 // 	padding: 0 15px;
@@ -591,7 +830,11 @@ h4 {
 }
 
 p {
-	@include p
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
 }
 </style>
 
