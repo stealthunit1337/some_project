@@ -184,12 +184,12 @@
 		<div class="container">
 			<div class="wrapper6">
 				<div class="text6">
-					<h2>Правовые секреты от Zakonbiz</h2>
+					<h2 class="h2">Правовые секреты от Zakonbiz</h2>
 					<p>Раз в месяц дайджест законов в вашей почте!</p>
 				</div>
 				<div class="input_btn">
-					<input class="input" type="text">
-					<button class="btn btn_green"></button>
+					<input class="input" type="text" placeholder="Укажите Email">
+					<button class="btn btn_green">Подписаться</button>
 				</div>
 			</div>
 		</div>
@@ -803,12 +803,78 @@ export default {
 }
 
 .main6 {
+	padding-top: 31px;
+	padding-bottom: 40px;
 	background: linear-gradient(90deg, #ECF4FD 0%, #F8F3F1 50%, #F3E2E0 100%);
+
+
+
 
 	.wrapper6 {
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		margin-left: 8px;
+		margin-right: 8px;
 
+		@media (min-width: 768px) {
+			margin-left: -12px;
+			margin-right: -12px;
+		}
+
+		@media (min-width: 1200px) {}
+
+		.text6 {
+
+			.h2 {
+				@media (min-width: 768px) {
+					margin-bottom: 7px;
+					font-family: 'Inter';
+					font-style: normal;
+					font-weight: 600;
+					font-size: 20px;
+					line-height: 160%;
+				}
+			}
+		}
+
+		@media (min-width: 1200px) {
+			flex-direction: row;
+		}
+
+		.input_btn {
+			display: flex;
+			flex-direction: column;
+
+			@media (min-width: 768px) {
+				flex-direction: row;
+			}
+
+			.input {
+				margin-top: 26px;
+				align-items: center;
+				padding: 12px 16px 12px 24px;
+				background: #FFFFFF;
+				box-shadow: 0px 6px 12px rgba(223, 225, 233, 0.24);
+				border-radius: 22px;
+				width: 100%;
+				align-self: center;
+				border: none;
+
+				@media (min-width: 768px) {
+					margin-right: 12px;
+				}
+
+				@media (min-width: 1200px) {
+					margin-left: 14px;
+				}
+			}
+
+			.btn {
+				align-self: center;
+				margin-top: 24px;
+			}
+		}
 	}
 }
 
