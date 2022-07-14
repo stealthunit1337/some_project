@@ -637,10 +637,10 @@ export default {
 			padding-left: 30px;
 			padding-right: 12px;
 
-			// @media (min-width: 768px) {
-			// 	display: flex;
-			// 	flex-direction: column;
-			// }
+			@media (min-width: 768px) and (max-width: 1199.98px) {
+				justify-self: flex-start;
+				width: 100%;
+			}
 		}
 
 		li {
@@ -679,6 +679,11 @@ export default {
 			padding-left: 10px;
 			padding-right: 10px;
 			margin-top: -16px;
+
+			@media (min-width: 768px) and (max-width: 1199.98px) {
+				justify-self: flex-start;
+				width: 100%;
+			}
 		}
 
 		.price_btn {
@@ -790,7 +795,9 @@ export default {
 			}
 
 			.btn {
+
 				margin-top: 32px;
+				justify-self: center;
 
 				@media (min-width: 768px) {
 					margin-top: 24px;
@@ -805,26 +812,36 @@ export default {
 .main6 {
 	padding-top: 31px;
 	padding-bottom: 40px;
+	width: 100%;
 	background: linear-gradient(90deg, #ECF4FD 0%, #F8F3F1 50%, #F3E2E0 100%);
 
+	@media(max-width: 767.98px) {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
 
 
 
 	.wrapper6 {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		margin-left: 8px;
-		margin-right: 8px;
+		width: 100%;
 
-		@media (min-width: 768px) {
-			margin-left: -12px;
-			margin-right: -12px;
-		}
+
+		// @media (min-width: 768px) {
+		// 	margin-left: -12px;
+		// 	margin-right: -12px;
+		// }
 
 		@media (min-width: 1200px) {}
 
 		.text6 {
+			text-align: center;
+
+			@media (min-width: 768px) {
+				text-align: left;
+			}
+
 
 			.h2 {
 				@media (min-width: 768px) {
@@ -844,6 +861,7 @@ export default {
 
 		.input_btn {
 			display: flex;
+			width: 100%;
 			flex-direction: column;
 
 			@media (min-width: 768px) {
@@ -857,12 +875,13 @@ export default {
 				background: #FFFFFF;
 				box-shadow: 0px 6px 12px rgba(223, 225, 233, 0.24);
 				border-radius: 22px;
-				width: 100%;
+				width: 280px;
 				align-self: center;
 				border: none;
 
 				@media (min-width: 768px) {
 					margin-right: 12px;
+					width: 100%;
 				}
 
 				@media (min-width: 1200px) {
@@ -873,6 +892,11 @@ export default {
 			.btn {
 				align-self: center;
 				margin-top: 24px;
+				min-width: 190px;
+
+				@media (min-width: 768px) {
+					margin-right: 0;
+				}
 			}
 		}
 	}
