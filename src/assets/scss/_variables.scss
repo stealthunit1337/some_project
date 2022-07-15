@@ -8,10 +8,10 @@ $grid-breakpoints: (
 
 $container-max-widths: (
 	sm: 576px,
-	md: 692px,
+	md: 716px,
 	lg: 910px,
-	xl: 1110px,
-	xxl: 1110px) !default;
+	xl: 1134px,
+	xxl: 1134px) !default;
 
 // $container-max-widths: (
 //   sm: 576px,
@@ -22,3 +22,15 @@ $container-max-widths: (
 // ) !default;
 
 // $my-var: 40px;
+
+@mixin size($size) {
+	@if $size == mobile {
+	  @media (max-width: 767.9px) { @content; }
+	} @else if $size == tablet {
+	  @media (min-width: 768px) and (max-width:1199.9px) { @content; }
+	} @else if $size == tablet-up {
+	  @media (min-width: 768px) { @content; }
+	} @else if $size == desktop {
+	  @media (min-width: 1200px) { @content; }
+	}
+  }

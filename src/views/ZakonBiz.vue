@@ -1,5 +1,5 @@
 <template >
-	<!-- <div class="bg_box">
+	<div class="bg_box">
 		<img v-if="device == 'pc'" src="@/assets/img/bg-pc.svg" alt="">
 		<img v-else src="@/assets/img/bg-tablet.svg" alt="">
 	</div>
@@ -103,7 +103,7 @@
 				</div>
 			</div>
 		</div>
-	</div> -->
+	</div>
 
 	<div class="main4">
 		<div class="container">
@@ -231,7 +231,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/scss/mixins";
+@use "scss:math";
+// @import "@/assets/scss/mixins";
 
 
 * {
@@ -257,14 +258,12 @@ export default {
 
 		@media (min-width: 768px) {
 			flex-direction: row;
-			padding-right: -12px;
-			padding-left: -12px;
-			justify-content: space-between;
+			justify-content: center;
 
 
 		}
 
-		padding: 64px 8px;
+		padding: 64px 0px;
 		padding-top: 40px;
 		background: #FFFFFF;
 
@@ -274,6 +273,16 @@ export default {
 			flex-direction: row;
 			text-align: left;
 			margin-top: 24px;
+
+			@include size(tablet) {
+				width: 150px/692px*100%;
+			}
+
+			@include size(desktop) {
+				width: 255px/1100px*100%;
+				padding-left: 40px;
+				padding-right: 40px;
+			}
 
 
 
@@ -319,16 +328,37 @@ export default {
 	// padding: 0 30px;
 	background: #FFFFFF;
 
+	@include size(mobile) {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
 	.blocks1 {
 		display: flex;
-		@include direction;
+		flex-direction: column;
 		align-items: center;
 		justify-content: space-evenly;
+
+		@include size(desktop) {
+			flex-direction: row;
+		}
 
 
 		.block {
 			// padding: 0 15px;
 			margin-top: 32px;
+
+			@include size(desktop) {
+				width: 540/1100*100%;
+
+				&:first-child {
+					margin-right: 30px;
+				}
+
+				&:not(:last-child) {
+					margin-right: 30px;
+				}
+			}
 		}
 
 		.vector__block {
@@ -347,7 +377,6 @@ export default {
 
 	.btns1 {
 		margin-top: 20px;
-		margin-left: 3px;
 		margin-bottom: 64px;
 		display: flex;
 		flex-direction: row;
@@ -408,12 +437,6 @@ export default {
 	.b2_h2 {
 		// padding-left: 45px;
 
-		@media (max-width: 1200px) {
-			margin-left: -12px;
-		}
-
-		margin-left: -12px;
-		margin-right: -12px;
 
 		@media (max-width: 767.98px) {
 			display: flex;
@@ -426,13 +449,11 @@ export default {
 	.blocks2 {
 		display: flex;
 		justify-content: center;
-		margin-left: -12px;
-		margin-right: -12px;
 
-		@media (max-width: 767.98px) {
+		@include size(mobile) {
 			flex-direction: column;
-			margin-left: -12px;
-			margin-right: -12px;
+			padding-left: 8px;
+			padding-right: 8px;
 		}
 
 		.b_1 {
@@ -569,16 +590,14 @@ export default {
 		margin-right: 8px;
 
 		@media (min-width: 768px) and (max-width: 1199.98px) {
-			margin-left: -12px;
-			margin-right: -12px;
+			margin: 0
 		}
+
 
 		@media(min-width: 1200px) {
 			display: flex;
 			flex-direction: row;
-			margin-left: -27px;
-			margin-right: -27px;
-
+			margin: 0
 		}
 
 		.box4 {
@@ -601,6 +620,14 @@ export default {
 			@media(min-width: 1200px) {
 				margin-left: 15px;
 				margin-right: 15px;
+
+				&:first-child {
+					margin-left: 0
+				}
+
+				&:last-child {
+					margin-right: 0
+				}
 			}
 
 		}
@@ -735,8 +762,8 @@ export default {
 .main5 {
 	padding-top: 64px;
 	padding-bottom: 64px;
-	padding-left: 8px;
-	padding-right: 8px;
+	// padding-left: 8px;
+	// padding-right: 8px;
 
 
 	.wrapper5 {

@@ -8,6 +8,7 @@
 </template>
 
 <script>
+
 // import MyFooter from './components/MyFooter.vue'
 // import MyHeader from './components/MyHeader.vue'
 
